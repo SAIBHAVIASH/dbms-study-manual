@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102f42">
+<title>DBMS Lab Study Hub</title>
+<style>
+:root{--navy:#102f42;--navy2:#17465c;--teal:#087f83;--mint:#dff3ec;--paper:#f5f8f7;--ink:#17323e;--muted:#60747b;--line:#d6e2e1;--gold:#f0bd55;--white:#fff;--shadow:0 12px 32px rgba(18,52,65,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.top{background:linear-gradient(115deg,var(--navy),#1e5a68);color:#fff;padding:27px clamp(18px,4vw,56px) 25px}.top-inner{max-width:1460px;margin:auto}.brandline{font-size:.76rem;font-weight:800;letter-spacing:.16em;color:#b9e9dc;text-transform:uppercase}.top h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:8px 0 9px;letter-spacing:-.035em}.top p{margin:0;color:#e1eeee;max-width:760px}.top-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid #ffffff5c;color:#fff;text-decoration:none;border-radius:999px;padding:8px 14px;font-size:.9rem;font-weight:700;background:#ffffff12}.pill:hover{background:#ffffff25}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{min-width:110px;border:1px solid #ffffff35;background:#ffffff0c;border-radius:12px;padding:8px 12px}.stat b{display:block;font-size:1.15rem}.stat span{color:#d5e8e7;font-size:.79rem}.layout{max-width:1460px;margin:auto;padding:22px clamp(12px,3vw,42px) 48px;display:grid;grid-template-columns:245px minmax(0,1fr);gap:20px}.side{align-self:start;position:sticky;top:12px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow);max-height:calc(100vh - 24px);overflow:auto}.side h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin:7px 8px 10px}.navbtn{display:block;width:100%;text-align:left;border:0;border-radius:10px;background:transparent;color:var(--ink);padding:9px 10px;font-weight:650;font-size:.91rem;text-decoration:none}.navbtn:hover,.navbtn.active{background:var(--mint);color:#075c61}.side-sep{border-top:1px solid var(--line);margin:12px 4px}.main{min-width:0}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.search{flex:1;min-width:220px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px 14px;outline-color:var(--teal);box-shadow:0 2px 7px #17323e0b}.tabs{display:flex;gap:6px;background:#e6efed;border-radius:12px;padding:4px}.tab{border:0;background:transparent;padding:8px 13px;border-radius:9px;color:var(--muted);font-weight:750}.tab.active{background:#fff;color:var(--navy);box-shadow:0 2px 7px #102f4215}.count{color:var(--muted);font-size:.88rem;margin:5px 2px 14px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:24px 2px 12px;scroll-margin-top:18px}.section-title h2{margin:0;color:var(--navy);font-size:1.35rem;letter-spacing:-.02em}.section-title p{margin:3px 0 0;color:var(--muted);font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:0 5px 16px #102f4208;overflow:hidden;display:flex;flex-direction:column;min-width:0;scroll-margin-top:18px}.card-head{padding:16px 17px 12px;border-bottom:1px solid #edf2f0}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:850}.card h3{margin:4px 0 2px;font-size:1.1rem;line-height:1.3;color:var(--navy)}.desc{margin:7px 0 0;color:#52676d;font-size:.9rem}.meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.tag{font-size:.74rem;font-weight:700;color:#496168;background:#eff5f3;border-radius:999px;padding:4px 8px}.card-body{padding:13px 17px 16px;display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 11px;font-size:.83rem;font-weight:780;color:var(--navy);text-decoration:none}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn:hover{filter:brightness(.96);border-color:#9bbdb7}.empty{grid-column:1/-1;border:1px dashed #b9cbc7;border-radius:14px;padding:24px;text-align:center;color:var(--muted);background:#fff}.note{margin-top:18px;padding:14px 16px;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;background:#fff9e9;color:#59491d;font-size:.9rem}.footer{max-width:1460px;margin:0 auto;padding:0 clamp(12px,3vw,42px) 28px;color:var(--muted);font-size:.82rem}.hidden{display:none!important}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.side{position:relative;top:auto;max-height:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:3px}.side h2,.side-sep{grid-column:1/-1}.side h2{margin-bottom:3px}.navbtn{padding:8px}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.toolbar{align-items:stretch}.search{min-width:100%}.tabs{justify-content:center}.tabs .tab{flex:1;padding:8px 7px;font-size:.83rem}.section-title{display:block}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brandline">DBMS • SEM III LAB</div>
+    <h1>DBMS Lab Study Hub</h1>
+    <p>All eight weekly lab PDFs, plus two viva and SQL/PL-SQL syntax references. Find a week, open the PDF in your browser, or download it for offline study.</p>
+    <div class="top-actions"><a class="pill" href="#week-list">Browse weekly labs ↓</a><a class="pill" href="#references">Viva &amp; syntax references</a></div>
+    <div class="stats"><div class="stat"><b>8</b><span>weekly lab PDFs</span></div><div class="stat"><b>2</b><span>viva references</span></div><div class="stat"><b>All</b><span>files work offline</span></div></div>
+  </div>
+</header>
+<div class="layout">
+  <aside class="side" id="sideNav" aria-label="Week navigation"></aside>
+  <main class="main">
+    <div class="toolbar">
+      <input class="search" id="search" type="search" placeholder="Search weeks, topics, or PDF names…" aria-label="Search PDF documents">
+      <div class="tabs" role="tablist" aria-label="Document type"><button class="tab active" data-view="all">All files</button><button class="tab" data-view="weeks">Weeks 1–8</button><button class="tab" data-view="refs">Viva references</button></div>
+    </div>
+    <div class="count" id="count" aria-live="polite"></div>
+    <section id="weekSection" aria-labelledby="weekTitle"><div class="section-title" id="week-list"><div><h2 id="weekTitle">Weekly laboratory exercises</h2><p>Choose a week to open its complete lab PDF.</p></div></div><div class="grid" id="weekGrid"></div></section>
+    <section id="referenceSection" aria-labelledby="refTitle"><div class="section-title" id="references"><div><h2 id="refTitle">Viva &amp; syntax references</h2><p>Quick revision material for DBMS lab viva and SQL/PL-SQL syntax.</p></div></div><div class="grid" id="refGrid"></div></section>
+    <div class="note"><b>Offline tip:</b> Download the ZIP and extract the complete folder. Keep the <code>pdfs</code> folder beside <code>index.html</code>; then open <code>index.html</code> in a browser.</div>
+  </main>
+</div>
+<footer class="footer">A simple, self-contained study library. The page uses local files only and does not load external fonts, scripts, or services.</footer>
+<script>
+const FILES=[
+ {kind:'week',week:1,title:'Create Tables',description:'Create database tables and work with table structure and records.',pages:9,file:'DBMS_Lab_Week1_Final.pdf',label:'Week 1 lab'},
+ {kind:'week',week:2,title:'Queries Using DDL and DML',description:'Create and modify database objects, then insert, update, delete, and query records.',pages:7,file:'DBMS_Lab_Week2_Final.pdf',label:'Week 2 lab'},
+ {kind:'week',week:3,title:'Queries Using Aggregate Functions',description:'Use COUNT, SUM, AVG, MAX, and MIN with the lab tables and SQL queries.',pages:23,file:'DBMS_Lab_Week3_Final.pdf',label:'Week 3 lab'},
+ {kind:'week',week:4,title:'Programs on PL/SQL',description:'PL/SQL block exercises, with aims, algorithms, program code, and outputs.',pages:8,file:'DBMS_Lab_Week4_Final.pdf',label:'Week 4 lab'},
+ {kind:'week',week:5,title:'Procedures and Functions',description:'Create and use PL/SQL procedures and functions with the lab examples.',pages:10,file:'DBMS_Lab_Week5_Final.pdf',label:'Week 5 lab'},
+ {kind:'week',week:6,title:'Triggers',description:'Create and test triggers for table operations such as INSERT, UPDATE, and DELETE.',pages:15,file:'DBMS_Lab_Week6_Final.pdf',label:'Week 6 lab'},
+ {kind:'week',week:7,title:'Procedures',description:'PL/SQL procedure exercises, including checking whether a number is a palindrome.',pages:3,file:'DBMS_Lab_Week7_Final.pdf',label:'Week 7 lab'},
+ {kind:'week',week:8,title:'Procedures',description:'PL/SQL procedure exercises, including calculating the factorial of a number.',pages:6,file:'DBMS_Lab_Week8_Final.pdf',label:'Week 8 lab'},
+ {kind:'ref',title:'DBMS Lab Viva & Complete Syntax Reference',description:'Topic-wise viva questions and SQL/PL-SQL syntax reference covering Weeks 1–8.',pages:8,file:'DBMS_Lab_Viva_and_Syntax_Reference.pdf',label:'Viva + syntax'},
+ {kind:'ref',title:'DBMS Viva Questions and Answers',description:'Short viva revision on SQL command subsets, keys, ER diagrams, and PL/SQL.',pages:4,file:'DBMS_Viva_Questions_and_Answers.pdf',label:'Viva questions'}
+];
+const search=document.getElementById('search'),weekGrid=document.getElementById('weekGrid'),refGrid=document.getElementById('refGrid'),count=document.getElementById('count');let view='all',activeWeek=0;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function matches(d){const q=search.value.trim().toLowerCase();return(!q||[d.title,d.description,d.file,d.label,`week ${d.week||''}`].join(' ').toLowerCase().includes(q))&&(view==='all'||(view==='weeks'&&d.kind==='week')||(view==='refs'&&d.kind==='ref'))}
+function card(d){const path='pdfs/'+encodeURIComponent(d.file).replaceAll('%2F','/');const prefix=d.kind==='week'?`Week ${d.week}`:'Reference';return `<article class="card" id="${d.kind==='week'?'week-'+d.week:'ref-'+d.file.replace(/[^a-z0-9]/gi,'-')}"><div class="card-head"><div class="eyebrow">${prefix} · ${d.pages} pages</div><h3>${esc(d.title)}</h3><p class="desc">${esc(d.description)}</p><div class="meta"><span class="tag">${esc(d.label)}</span><span class="tag">PDF</span></div></div><div class="card-body"><a class="btn primary" href="${path}" target="_blank" rel="noopener">Open PDF ↗</a><a class="btn" href="${path}" download>Download PDF ↓</a></div></article>`}
+function render(){const weeks=FILES.filter(d=>d.kind==='week'&&matches(d)),refs=FILES.filter(d=>d.kind==='ref'&&matches(d));weekGrid.innerHTML=weeks.length?weeks.map(card).join(''):'<div class="empty">No matching week PDFs. Try a different search.</div>';refGrid.innerHTML=refs.length?refs.map(card).join(''):'<div class="empty">No matching reference PDFs. Try a different search.</div>';document.getElementById('weekSection').classList.toggle('hidden',view==='refs');document.getElementById('referenceSection').classList.toggle('hidden',view==='weeks');count.textContent=`Showing ${weeks.length+refs.length} of ${FILES.length} PDF files`;}
+function nav(){const side=document.getElementById('sideNav');side.innerHTML='<h2>Jump to a week</h2><a class="navbtn" href="#week-list">All weekly labs</a>'+FILES.filter(d=>d.kind==='week').map(d=>`<a class="navbtn" href="#week-${d.week}">Week ${d.week} · ${esc(d.title)}</a>`).join('')+'<div class="side-sep"></div><h2>References</h2><a class="navbtn" href="#references">Viva &amp; syntax PDFs</a>'}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render()}));search.addEventListener('input',render);nav();render();
+</script>
+</body>
+</html>
